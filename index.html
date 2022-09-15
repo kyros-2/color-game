@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>KYROS | Color Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">3</div>
+        <div class="color">
+            <h1 class="colorText"></h1>
+        </div>
+        <div class="colorsBoxContainer">
+            <button class="colorBox" id="red" style="--c: red;"></button>
+            <button class="colorBox" id="green" style="--c: green;"></button>
+            <button class="colorBox" id="blue" style="--c: blue;"></button>
+            <button class="colorBox" id="yellow" style="--c: yellow;"></button>
+        </div>
+
+        <div class="loseBox">
+            <h1>... لقد خسرت</h1>
+            <button type="button" id="tryagainBtn">حاول مجددا</button>
+        </div>
+
+        <div class="startBox active">
+            <h1>... اهلا بك</h1>
+            <button type="button" id="startBtn">ابدأ</button>
+        </div>
+    </div>
+
+    <div class="scoreBox">
+        <h1 class="scoreText"><span id="score"></span> : نتيجة</h1>
+        <h1 class="scoreText"><span id="bestScore"></span> : أفضل نتيجة</h1>
+    </div>
+</body>
+</html>
